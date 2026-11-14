@@ -691,31 +691,11 @@ export default function App() {
           </div>
 
           <div>
-            <label
-              style={{
-                display: "block",
-                color: "#000080",
-                fontWeight: "bold",
-                marginBottom: "8px",
-              }}
-            >
-              4. تاريخ امتحان الجزء الأول
-            </label>
-            <input
-              type="date"
-              max={today}
-              value={examDate}
-              onChange={(e) => setExamDate(e.target.value)}
-              style={{
-                width: "100%",
-                padding: "12px",
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                boxSizing: "border-box",
-              }}
-            />
+            <label style={{ display: 'block', color: '#000080', fontWeight: 'bold',
+                marginBottom: '8px' }}>4. تاريخ امتحان الجزء الأول</label>
+            <input type="date" max={today} value={examDate} onChange={(e) => setExamDate(e.target.value)} placeholder="اختر التاريخ" style={{ width: '100%', padding: '12px',
+                border: '1px solid #ccc', borderRadius: '8px', boxSizing: 'border-box', direction: 'rtl', textAlign: 'right', fontFamily: 'inherit' }} />
           </div>
-
           <div>
             <label
               style={{
